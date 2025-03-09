@@ -25,7 +25,7 @@ export const Navigation: React.FC<Props> = ({ activeSection, onNavigate }) => {
   };
 
   const openCricbuzz = () => {
-    window.open('https://www.cricbuzz.com', '_blank');
+    window.open('https://garuda-sastra.netlify.app/', '_self');
   };
 
   return (
@@ -76,7 +76,7 @@ export const Navigation: React.FC<Props> = ({ activeSection, onNavigate }) => {
         >
           <Home className={`w-5 h-5 transition-transform duration-300 ${isHovered ? 'rotate-12' : ''}`} />
           {!isCollapsed && (
-            <span className="ml-3 font-medium">Cricbuzz</span>
+            <span className="ml-3 font-medium">Home</span>
           )}
           {isCollapsed && (
             <div className="absolute left-full ml-2 px-2 py-1 bg-gray-800 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
